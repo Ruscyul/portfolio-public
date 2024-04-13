@@ -1,0 +1,39 @@
+.skills {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+
+  @include breakpoint(sm) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+  }
+
+  @include breakpoint(md) {
+    gap: 30px;
+  }
+
+  &__card {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px  rgba(174, 199, 234, 0.50);
+  }
+
+  &__card-title {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  &__card-list {
+    padding-inline-start: 20px;
+  }
+
+  &__card-item {
+    list-style-type: disc;
+    margin-bottom: 10px;
+
+    &::marker {
+      color: var(--accent-color);
+    }
+  }
+}
+

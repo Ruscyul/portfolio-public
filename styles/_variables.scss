@@ -1,0 +1,36 @@
+:root {
+  /* Container */
+  --container-width: 1024px;
+  --container-padding-x: 10px;
+
+  @include breakpoint(xs) {
+    --container-padding-x: 30px;
+  }
+
+  @include breakpoint(md) {
+    --container-padding-x: 50px;
+  }
+
+  /* Font */
+  --font-family-base: "Raleway", sans-serif;
+  --font-size-body: 1.125rem;
+
+  --font-size-h1: 2rem;
+  --font-size-h2: 1.5rem;
+  --font-size-h3: 1.25rem;
+  --font-size-small: 1rem;
+
+  @include breakpoint(lg) {
+    --font-size-body: 1.25rem;
+    --font-size-h1: 2.25rem;
+    --font-size-h2: 1.5rem;
+    --font-size-h3: 1.25rem;
+  }
+
+  /* Color */
+  --body-color: #eff2f9;
+  --bg-color: #fff;
+  --accent-color: rgba(174, 199, 234);
+  --light-color: #f3f3f3;
+}
+

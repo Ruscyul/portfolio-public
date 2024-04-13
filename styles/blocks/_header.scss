@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--body-color);
+  z-index: 2;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    margin-right: 10px;
+    font-weight: 800;
+    font-size: var(--font-size-h1);
+  }
+
+  &__menu-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @include breakpoint(md) {
+      gap: 50px;
+    }
+  }
+}
+
