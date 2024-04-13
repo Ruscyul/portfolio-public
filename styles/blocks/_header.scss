@@ -29,5 +29,25 @@
       gap: 50px;
     }
   }
+
+  &__theme-toggle {
+    width: 24px;
+    height: 24px;
+    background: none;
+
+    & > svg {
+    inline-size: 100%;
+    block-size: 100%;
+    }
+  }
+
+  &__theme-light-icon {
+    display: none;
+  }
+
+  &__theme-dark-icon {
+    display: none;
+    fill: #ffffff;
+  }
 }
 

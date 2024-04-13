@@ -8,6 +8,8 @@ body {
   font-size: var(--font-size-body);
   min-height: 100%;
   background-color: var(--body-color);
+  transition: background-color 0.2s ease;
+  color: var(--text-color);
 }
 
 h1 {
@@ -39,6 +41,18 @@ mark {
     rgba(174, 199, 234, 0.7) 95%,
     rgba(0, 145, 255, 0.1)
   );
+}
+
+[data-theme="dark"] {
+  & mark {
+    background-image: linear-gradient(
+      -100deg,
+      rgba(174, 199, 234, 0.2),
+      rgba(174, 199, 234, 0.7) 85%,
+      rgba(174, 199, 234, 0.2),
+    );
+    color: var(--text-color)
+  }
 }
 
 .link {

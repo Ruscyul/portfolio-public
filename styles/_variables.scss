@@ -26,11 +26,21 @@
     --font-size-h2: 1.5rem;
     --font-size-h3: 1.25rem;
   }
+}
 
-  /* Color */
+/* Color & Theme */
+[data-theme="light"] {
   --body-color: #eff2f9;
   --bg-color: #fff;
-  --accent-color: rgba(174, 199, 234);
+  --accent-color: #aec7ea;
   --light-color: #f3f3f3;
 }
 
+[data-theme="dark"] {
+  --body-color: #121212;
+  --bg-color: #282828;
+  --accent-color: #aec7ea;
+  --light-color: #ffffff;
+
+  --text-color: #E3E3E3;
+}
