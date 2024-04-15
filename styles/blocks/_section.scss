@@ -9,7 +9,7 @@
   &__content {
     background-color: var(--bg-color);
     border-radius: 20px;
-    padding: 10px;
+    padding-block: 20px;
  
     @include breakpoint(md) {
       padding: 50px;

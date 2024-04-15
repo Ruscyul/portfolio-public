@@ -93,7 +93,7 @@ body {
   font-size: var(--font-size-body);
   min-height: 100%;
   background-color: var(--body-color);
-  transition: background-color 0.2s ease;
+  transition: background-color 0.1s;
   color: var(--text-color);
 }
 
@@ -186,7 +186,7 @@ mark {
 .section__content {
   background-color: var(--bg-color);
   border-radius: 20px;
-  padding: 10px;
+  padding-block: 20px;
 }
 @media (min-width: 768px) {
   .section__content {
@@ -214,7 +214,6 @@ mark {
   align-items: center;
 }
 .header__logo {
-  margin-right: 10px;
   font-weight: 800;
   font-size: var(--font-size-h1);
 }
@@ -222,6 +221,12 @@ mark {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  font-size: 16px;
+}
+@media (min-width: 425px) {
+  .header__menu-list {
+    font-size: var(--font-size-body);
+  }
 }
 @media (min-width: 768px) {
   .header__menu-list {
@@ -229,6 +234,7 @@ mark {
   }
 }
 .header__theme-toggle {
+  flex-shrink: 0;
   width: 24px;
   height: 24px;
   background: none;
@@ -248,6 +254,7 @@ mark {
 .home {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 @media (min-width: 576px) {
