@@ -73,7 +73,7 @@ li {
   --bg-color: #fff;
   --accent-color: #aec7ea;
   --light-color: #f3f3f3;
-  --box-shadow: 0 2px 5px rgba(174, 199, 234, 0.50);
+  --border-color: #dedee0;
 }
 
 [data-theme=dark] {
@@ -81,7 +81,7 @@ li {
   --bg-color: #282828;
   --accent-color: #aec7ea;
   --light-color: #ffffff;
-  --box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+  --border-color: #5a5761;
   --text-color: #E3E3E3;
 }
 
@@ -296,7 +296,8 @@ mark {
 .skills__card {
   padding: 20px;
   border-radius: 15px;
-  box-shadow: var(--box-shadow);
+  border: 1px solid var(--border-color);
+  background: var(--bg-color);
 }
 .skills__card-title {
   margin-bottom: 10px;

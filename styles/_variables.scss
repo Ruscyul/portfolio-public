@@ -34,7 +34,7 @@
   --bg-color: #fff;
   --accent-color: #aec7ea;
   --light-color: #f3f3f3;
-  --box-shadow: 0 2px 5px  rgba(174, 199, 234, 0.50);
+  --border-color: #dedee0;
 }
 
 [data-theme="dark"] {
@@ -42,7 +42,7 @@
   --bg-color: #282828;
   --accent-color: #aec7ea;
   --light-color: #ffffff;
-  --box-shadow: 0 2px 5px  rgba(255, 255, 255, 0.5);
+  --border-color: #5a5761;
 
   --text-color: #E3E3E3;
 }

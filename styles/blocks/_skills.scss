@@ -15,7 +15,8 @@
   &__card {
     padding: 20px;
     border-radius: 15px;
-    box-shadow: var(--box-shadow)
+    border: 1px solid var(--border-color);
+    background: var(--bg-color);
   }
 
   &__card-title {
